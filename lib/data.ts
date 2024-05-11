@@ -88,7 +88,7 @@ export const projectsData = [
         title_zh: '可爱小猫交互式网站',
         description:
             "It aims to assist users in finding the perfect feline companion. Featuring responsive design, it includes a navigation bar, software downloads, and a carousel of user testimonials.",
-        desc_zh: "一个打字速旨在协助用户找到合适的猫猫玩伴，该网站实现响应式设计，功能有导航栏、软件下载和轮播用户评价，以方便用户查找信息。",
+        desc_zh: "一个旨在协助用户找到合适的猫猫玩伴，该网站实现响应式设计，功能有导航栏、软件下载和轮播用户评价，以方便用户查找信息。",
         tags: ["Bootstrap", "javaScript", "HTML5", 'CSS3', "UX"],
         imageUrl: typingSpeedImage,
         projectUrl: 'https://github.com/witch641/CuteKitty',
