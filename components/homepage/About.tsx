@@ -65,7 +65,7 @@ learning and applying innovative front-end solutions.
           <p className="mb-3">
             I thrive on programming challenges and enjoy working with teams to
             solve complex problems. I specialize in technologies such as
-            <span className="font-medium italic"> jQuery, Bootstrap and Vue</span>,
+            <span className="font-medium italic"> Bootstrap、Vue and React</span>,
             and have a solid understanding of{" "}
             <span className="font-medium italic">
               JavaScript and HTML5/CSS3
