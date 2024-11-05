@@ -9,7 +9,7 @@ import { isMobileDevice } from "@/lib/utils"
 
 export const metadata = {
   title: "Silvia's Personal Site",
-  description: "Joy is a full-stack developer with 2 years of experience.",
+  description: "",
 }
 
 export default function Home() {
