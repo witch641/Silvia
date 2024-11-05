@@ -96,7 +96,7 @@ export default function Intro() {
             >
               <TypeAnimation
                 sequence={[
-                  "Frontend Developer",
+                  "Project Assistant",
                   1000,
                   "Digital Modality Analyst",
                   1200,
@@ -112,7 +112,7 @@ export default function Intro() {
         {activeLocale === "en" && (
           <p>
             My focus is{" "}
-            <span className="italic font-bold">React</span>.
+            <span className="italic font-bold">Devops</span>.
           </p>
         )}
       </motion.h1>
@@ -125,17 +125,6 @@ export default function Intro() {
           delay: 0.1,
         }}
       >
-        {/* <Link
-          href="#contact"
-          onClick={() => {
-            setActiveSection("Contact")
-            setTimeOfLastClick(Date.now())
-          }}
-          className="group bg-gray-900 px-4 py-2 text-sm sm:text-lg text-white sm:px-7 sm:py-3 flex items-center gap-2  rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
-        >
-          Contact me here
-          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
-        </Link> */}
         <a
           href="/Silvia-Frontend.pdf"
           download={true}
@@ -146,7 +135,7 @@ export default function Intro() {
         </a>
         <a
           className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://www.linkedin.com/in/思忆-刘-8bb239307/"
+          href="https://www.linkedin.com/in/siyi-liu-8bb239307/"
           target="_blank"
         >
           <BsLinkedin />

@@ -75,13 +75,7 @@ export default function Project({
               </li>
             ))}
           </ul>
-          {/* <Link
-            href={detailRoute}
-            className="group flex gap-2 items-center font-medium group-hover:text-pink dark:group-hover:text-yellow hover:underline mt-auto"
-          >
-            See Detail
-            <IoIosArrowForward className="hidden group-hover:block" />
-          </Link> */}
+
         </div>
 
         <Image
