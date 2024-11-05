@@ -24,11 +24,7 @@ export default function Page() {
           demoUrl={project?.demoUrl!}
           projectUrl={project?.projectUrl!}
         />
-        {/* <Image
-        src={project?.imageUrl!}
-        alt="projectImage"
-        className="mt-10 w-[30rem] h-[20rem]"
-      /> */}
+
         <Video
           imageUrl={"/typing-speed.png"}
           url={"https://www.youtube.com/watch?v=3JZ_D3ELwOQ"}
