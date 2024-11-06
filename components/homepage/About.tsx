@@ -42,7 +42,7 @@ export default function About() {
             . I'm majoring in data science, with a solid foundation in data engineering and IT technology. 
             As an avid gamer, I particularly enjoy cooperative and detective games like Werewolf, Mario, and script killing.
             My passion for gaming extends beyond entertainment, as I focus on analyzing game mechanics and user experience.{" "}
-            <span className="font-medium italic"></span>.
+            <span className="font-medium italic"></span>
           </p>
 
           <p className="mb-3">
