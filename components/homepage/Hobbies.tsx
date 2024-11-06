@@ -1,7 +1,7 @@
 "use client"
 
 import React from "react"
-import { useActiveSectionContext } from "@/context/ActionSectionContext"  // 导入context
+import { useActiveSectionContext } from "@/context/action-section-context"  // 导入context
 import SectionHeading from "./SectionHeading"
 import { motion } from "framer-motion"
 
