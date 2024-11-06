@@ -1,9 +1,11 @@
 "use client"
 
 import React from "react"
-import { motion } from "framer-motion"
+import Hobbies from "./components/Hobbies"; 
+
+import { useActiveSectionContext } from "@/context/ActionSectionContext"  // 导入 context
 import SectionHeading from "./SectionHeading"
-import { useLocale } from "next-intl"
+import { motion } from "framer-motion"
 
 const hobbiesData = [
   {
@@ -33,10 +35,17 @@ const hobbiesData = [
 ]
 
 const Hobbies = () => {
+  const { activeSection } = useActiveSectionContext(); // 获取当前活跃部分
+
+  // 判断当前 section 是否是 'Hobbies'，如果是，则渲染该部分
+  if (activeSection !== "Hobbies") {
+    return null; // 如果当前 section 不是 Hobbies，则不渲染该部分
+  }
+
   return (
     <section className="sm:mb-40 relative mb-20">
       <SectionHeading>My Hobbies</SectionHeading>
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
