@@ -26,9 +26,9 @@ export default function Page() {
         />
 
         <Video
-          imageUrl={"/typing-speed.png"}
-          url={"https://www.youtube.com/watch?v=3JZ_D3ELwOQ"}
-          alt="typing-speed-cover"
+          imageUrl={"/cutekitty.png"}
+          url={""}
+          alt=""
           className="text-center"
         />
       </main>
