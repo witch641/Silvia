@@ -151,5 +151,5 @@ export const skillsData = [
     "Python",
     "R","SPSS","jQuery",
     "Next.js",
-    "Ajax","Flourish","Driving license"
+    "Ajax","Flourish","Driving license","A Good Game Partner"
 ] 
