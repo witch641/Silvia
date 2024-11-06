@@ -1,7 +1,6 @@
+"use client"
 
 import React from "react"
-import { headerLanguageMap, skillsData } from "@/lib/data"
-import { useSectionInView } from "@/lib/hooks"
 import { motion } from "framer-motion"
 import SectionHeading from "./SectionHeading"
 import { useLocale } from "next-intl"
@@ -35,23 +34,32 @@ const hobbiesData = [
 
 const Hobbies = () => {
   return (
-    <section className="my-10 px-4 py-8">
-      <h2 className="text-3xl font-semibold text-center mb-8">My Hobbies</h2>
-      <div className="flex flex-wrap justify-center gap-8">
-        {hobbiesData.map((category, index) => (
-          <div key={index} className="w-full sm:w-[30%] bg-gray-100 p-4 rounded-lg shadow-md dark:bg-gray-800">
-            <h3 className="text-2xl font-semibold text-center text-gray-800 dark:text-white mb-4">{category.title}</h3>
-            <ul>
-              {category.items.map((item, idx) => (
-                <li key={idx} className="mb-3 text-gray-700 dark:text-gray-300">
-                  <p className="font-semibold">{item.name}</p>
-                  <p className="text-sm">{item.description}</p>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </div>
+    <section className="sm:mb-40 relative mb-20">
+      <SectionHeading>My Hobbies</SectionHeading>
+      <motion.div 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+      >
+        <div className="flex flex-wrap justify-center gap-8">
+          {hobbiesData.map((category, index) => (
+            <div
+              key={index}
+              className="w-full sm:w-[45%] md:w-[30%] bg-gray-100 p-4 rounded-lg shadow-md dark:bg-gray-800"
+            >
+              <h3 className="text-2xl font-semibold text-center text-gray-800 dark:text-white mb-4">{category.title}</h3>
+              <ul>
+                {category.items.map((item, idx) => (
+                  <li key={idx} className="mb-3 text-gray-700 dark:text-gray-300">
+                    <p className="font-semibold">{item.name}</p>
+                    <p className="text-sm">{item.description}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </motion.div>
     </section>
   )
 }
