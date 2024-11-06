@@ -114,11 +114,11 @@ export const projectsData = [
         detailRoute: '/projects/cutekitty',
     },
     {
-        title: "Automatic Evaluation",
-        title_zh: "竞赛论文自动化评阅",
+        title: "Automated Rev",
+        title_zh: "论文自动化评阅",
         description:
-            "As the team leader and coder, I developed this language model using Python, utilizing data mining, NLP, text analysis, and ML, ultimately earning a national third prize. The model scored 810 papers in batches, achieving a match rate of 91.3% with actual results and a nearly 300% increase in efficiency",
-        desc_zh: "我作为队长兼编程手，负责用Python和R语言开发论文质量评价系统，该大语言模型通过综合使用数据挖掘、自然语言处理、文本分析、机器学习，从五个维度为论文评分，最后获得全国三等奖。成果：该模型共计为810篇论文批量式打分，并且实际拟合效果的匹配度高达91.3%，效率提高近300%。",
+            "As the team leader and coder, I developed automated review model using Python, utilizing data mining, NLP and ML. this automatic scripts scored 810 papers in batches, ultimately earning a national third prize.",
+        des_zh:"我作为队长兼编程手，负责用Python开发论文自动化评阅脚本，该模型通过综合使用数据挖掘、自然语言处理、文本分析、机器学习，从五个维度为论文评分，该模型共计为810篇论文批量式打分，最后获得全国三等奖。",
         tags: ["R", "Python", "Feature Engineering", "LDA" ,'K-means', "SPSS"],
         imageUrl: dataMining,
         projectUrl: '',
@@ -142,7 +142,7 @@ export const projectsData = [
     {
         title: "Femicide Visual",
         title_zh: 'Femicide 可视化',
-        description: "Applied Numpy and Pandas for thorough data cleaning and preprocessing, ensuring accuracy and consistency, including handling missing values, outliers, and data format conversions. Utilized libraries like Matplotlib and Seaborn to visually display key trends and characteristics.",
+        description: "Applied Numpy and Pandas for thorough data cleaning and preprocessing, ensuring accuracy and consistency, including handling missing values, outliers, and data format conversions. ",
         desc_zh: "数据清洗和预处理：运用Numpy、Pandas对原始数据进行全面的清洗和预处理，确保数据的准确性和一致性，包括处理缺失值、异常值以及数据格式转换。数据可视化：使用例如Matplotlib、Seaborn等库，直观地展示其关键趋势和特点。",
         tags: ["Pyhon", "Numpy", "Pandas", "Flourish", 'PPT', 'Excel'],
         imageUrl: femicide,
