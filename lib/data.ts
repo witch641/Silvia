@@ -2,9 +2,10 @@ import React from "react";
 import { FaReact } from "react-icons/fa";
 import { FaVuejs } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import rubicGameImage from "@/public/2048-game.png";
-import gameHubImage from "@/public/game-hub.png";
-import typingSpeedImage from "@/public/typing-speed.png";
+import dataMining from "@/public/datamining.png";
+import femicide from "@/public/femicide.png";
+import cuteKitty from "@/public/cutekitty.png";
+import scriptKilling from "@/public/scriptkilling.png"
 
 export const links = [
     {
@@ -87,10 +88,10 @@ export const projectsData = [
             "It aims to assist cat-users in finding the perfect feline companion. Featuring responsive design, it includes a navigation bar, a carousel of user testimonials and price tables.",
         desc_zh: "一个旨在协助猫猫用户找到合适的猫友，该网站实现响应式设计，功能有导航栏指引、轮播用户评价和价格表格，以方便用户快速查找信息。",
         tags: ["Bootstrap", "HTML5", 'CSS3', "UX" ,'CAT'],
-        imageUrl: typingSpeedImage,
+        imageUrl: cuteKitty,
         projectUrl: 'https://github.com/witch641/CuteKitty',
         demoUrl: 'https://witch641.github.io/CuteKitty/',
-        detailRoute: '/projects/typing-speed',
+        detailRoute: '/projects/cutekitty',
     },
     {
         title: "Paper Evaluation System",
@@ -99,23 +100,23 @@ export const projectsData = [
             "Use LDA for competition-related topics, assess key term relevance. Calculate summary coverage with bag-of-words model. Evaluate text fluency, chart standardization, and logical analysis with keyword co-occurrence and reasoning.",
         desc_zh: "我作为队长兼编程手，负责用Python和R语言开发论文质量评价系统，该大语言模型通过综合使用数据挖掘、自然语言处理、文本分析、机器学习，从五个维度为论文评分，最后获得全国三等奖。成果：该模型共计为810篇论文批量式打分，并且实际拟合效果的匹配度高达91.3%，效率提高近300%。具体步骤：遍历pdf，用正则找（正文和摘要）、预处理、定义评价函数、设置异常时的条件函数和评分梯度。再详细些：应用 LDA 主题建模来识别与竞争相关的主题，确定关键词与主题的相关性。创建词袋模型来计算所需摘要词汇的覆盖率，衡量摘要与内容之间的相关性。利用关键词共现分析和逻辑推理评估文本流畅性、图表标准化、论证逻辑分析。",
         tags: ["R", "Python", "Feature Engineering", "LDA" ,'K-means', "SPSS"],
-        imageUrl: rubicGameImage,
+        imageUrl: dataMining,
         projectUrl: '',
         demoUrl: '/程序.zip',
-        detailRoute: '/projects/typing-speed'
+        detailRoute: '/projects/datamining'
 
     },
     {
-        title: "Script killing（ing)",
-        title_zh: '剧本杀记录app(研发中）',
+        title: "Script Killing(ING)",
+        title_zh: '剧本杀记录APP(研发中）',
         description:
             "Let's look forward to my app going live soon.",
         desc_zh: "目标功能：定义核心功能，例如记录游戏名称、心情、游戏时间、几人本及参与者、关键线索、复盘总结等。",
         tags: ["Kotlin", "Figma", 'Room', "RecyclerView", "UI"],
-        imageUrl: typingSpeedImage,
+        imageUrl: scriptKilling,
         projectUrl: '',
         demoUrl: '',
-        detailRoute: '/projects/2048-game',
+        detailRoute: '/projects/scriptkilling',
     }
     ,
     {
@@ -124,10 +125,10 @@ export const projectsData = [
         description: "Data Cleaning and Preprocessing: Applied Numpy and Pandas for thorough data cleaning and preprocessing, ensuring accuracy and consistency, including handling missing values, outliers, and data format conversions. Data Visualization: Utilized libraries like Matplotlib, Seaborn, and Plotly to visually display key trends and characteristics in the Femicide data.",
         desc_zh: "• 数据清洗和预处理：运用Numpy、Pandas对原始数据进行全面的清洗和预处理，确保数据的准确性和一致性，包括处理缺失值、异常值以及数据格式转换。• 数据可视化：使用例如Matplotlib、Seaborn、Polly等库，直观地展示Femicide数据中的关键趋势和特点。通过这些可视化，用户可以深入了解数据背后的故事。",
         tags: ["Pyhon", "Numpy", "Pandas", "Flourish", 'PPT', 'Excel'],
-        imageUrl: gameHubImage,
+        imageUrl: femicide,
         projectUrl:'',
         demoUrl: './消失的她.pdf',
-        detailRoute: '/projects/typing-speed'
+        detailRoute: '/projects/femicide'
     }
 ]
 
