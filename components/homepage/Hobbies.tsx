@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import React from "react"
-import { useActiveSectionContext } from "@/context/action-section-context"  // 导入context
-import SectionHeading from "./SectionHeading"
-import { motion } from "framer-motion"
+import React from "react";
+import { useActiveSectionContext } from "@/context/action-section-context"; // Ensure this path is correct
+import { motion } from "framer-motion";
+import SectionHeading from "./SectionHeading";
 
 const hobbiesData = [
   {
@@ -30,45 +30,46 @@ const hobbiesData = [
       { name: "Blinding Lights", description: "A popular song by The Weeknd." }
     ]
   }
-]
+];
 
 const Hobbies = () => {
-  const { activeSection } = useActiveSectionContext(); // 获取当前活跃部分
+  const { activeSection } = useActiveSectionContext();
 
-  // 判断当前 section 是否是 'Hobbies'，如果是，则渲染该部分
+  // Only render if `activeSection` is "Hobbies"
   if (activeSection !== "Hobbies") {
-    return null; // 如果当前 section 不是 Hobbies，则不渲染该部分
+    return null;
   }
 
   return (
-    <section className="sm:mb-40 relative mb-20">
+    <section id="hobbies" className="my-10 px-4 py-8">
       <SectionHeading>My Hobbies</SectionHeading>
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
+        className="flex flex-wrap justify-center gap-8"
       >
-        <div className="flex flex-wrap justify-center gap-8">
-          {hobbiesData.map((category, index) => (
-            <div
-              key={index}
-              className="w-full sm:w-[45%] md:w-[30%] bg-gray-100 p-4 rounded-lg shadow-md dark:bg-gray-800"
-            >
-              <h3 className="text-2xl font-semibold text-center text-gray-800 dark:text-white mb-4">{category.title}</h3>
-              <ul>
-                {category.items.map((item, idx) => (
-                  <li key={idx} className="mb-3 text-gray-700 dark:text-gray-300">
-                    <p className="font-semibold">{item.name}</p>
-                    <p className="text-sm">{item.description}</p>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
+        {hobbiesData.map((category, index) => (
+          <div
+            key={index}
+            className="w-full sm:w-[45%] md:w-[30%] bg-gray-100 p-4 rounded-lg shadow-md dark:bg-gray-800"
+          >
+            <h3 className="text-2xl font-semibold text-center text-gray-800 dark:text-white mb-4">
+              {category.title}
+            </h3>
+            <ul>
+              {category.items.map((item, idx) => (
+                <li key={idx} className="mb-3 text-gray-700 dark:text-gray-300">
+                  <p className="font-semibold">{item.name}</p>
+                  <p className="text-sm">{item.description}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </motion.div>
     </section>
-  )
-}
+  );
+};
 
-export default Hobbies
+export default Hobbies;
