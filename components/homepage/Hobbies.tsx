@@ -1,4 +1,10 @@
-import React from 'react'
+
+import React from "react"
+import { headerLanguageMap, skillsData } from "@/lib/data"
+import { useSectionInView } from "@/lib/hooks"
+import { motion } from "framer-motion"
+import SectionHeading from "./SectionHeading"
+import { useLocale } from "next-intl"
 
 const hobbiesData = [
   {
