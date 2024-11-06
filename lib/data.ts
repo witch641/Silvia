@@ -130,7 +130,7 @@ export const projectsData = [
         title: "Script Killing(ING)",
         title_zh: '剧本杀记录APP(研发中）',
         description:
-            "Let's look forward to my app going live soon.",
+            "Target Functions: define the core functions, such as recording the name of the game, the mood, the time of the game, how many books and participants, key clues, review summaries, etc. Let's look forward to my app going live soon.",
         desc_zh: "目标功能：定义核心功能，例如记录游戏名称、心情、游戏时间、几人本及参与者、关键线索、复盘总结等。应该过年前完成，尽情期待。",
         tags: ["Kotlin", "Figma", 'Room', "RecyclerView", "UI"],
         imageUrl: scriptKilling,
