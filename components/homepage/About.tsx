@@ -23,7 +23,7 @@ export default function About() {
       id="about"
     >
       <SectionHeading>{sectionLan("about")}</SectionHeading>
-      {activeLocale == "zh" ? (
+      {activeLocale == "en" ? (
         <p>{t("desc")}</p>
       ) : (
         <>
@@ -36,10 +36,10 @@ export default function About() {
                 href="https://en.wikipedia.org/wiki/Northeast_Agricultural_University"
                 target="_blank"
               >
-                NorthEast Agricultral University
+                NorthEast Agricultural University
               </a>
             </span>
-            . I’m majoring in data science, with a solid foundation in data engineering and IT technology. 
+            . I'm majoring in data science, with a solid foundation in data engineering and IT technology. 
             As an avid gamer, I particularly enjoy cooperative and detective games like Werewolf, Mario, and script killing.
             My passion for gaming extends beyond entertainment, as I focus on analyzing game mechanics and user experience.{" "}
             <span className="font-medium italic"></span>.
@@ -47,11 +47,11 @@ export default function About() {
 
           <p className="mb-3">
           Following Angela Yu's Frontend Development course and completing several projects, I've deepened my understanding and passion for front-end technologies. 
-          I’m eager to continue applying innovative front-end solutions and explore other exciting IT technologies.{" "}
+          I'm eager to continue applying innovative front-end solutions and explore other exciting IT technologies.{" "}
             <span className="italic underline">
              
             </span>{" "}
-            confirmed that this is the career path I'd love to pursue. I've deepened my understanding and passion for front-end technologies. Eager to continue 
+             I've deepened my understanding and passion for front-end technologies. Eager to continue 
 learning and applying innovative front-end solutions.
             <span className="font-medium italic">
             {" "}  
@@ -65,7 +65,7 @@ learning and applying innovative front-end solutions.
           </p>
 
           <p className="mb-3">
-          I’m keen on listening to podcasts and stand-up comedy. This year, I’ve completed over 40 published books and hope to connect with fellow readers.
+          I'm keen on listening to podcasts and stand-by comedy. This year, I've completed over 40 published books and hope to connect with reading fellows.
             <span className="font-medium italic"> </span>,
             {" "}
             <span className="font-medium italic">
