@@ -64,7 +64,7 @@ export default function About() {
 
           <p className="mb-3">
           I'm keen on listening to podcasts and stand-by comedy. This year, I've completed over 40 published books and hope to connect with reading fellows🔥.
-            <span className="font-medium italic"> </span>r
+            <span className="font-medium italic"> </span>
             {" "}
             <span className="font-medium italic">
             
