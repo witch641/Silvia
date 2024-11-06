@@ -28,7 +28,10 @@ export const links = [
         name: "Experience",
         hash: "#experience",
     },
-
+    {
+        name: "Hobbies",
+        hash: "#hobbies",
+    },
 ] as const;
 
 
@@ -38,6 +41,7 @@ export const headerLanguageMap = {
     Projects: '项目',
     Skills: '技能',
     Experience: '经历',
+    Hobbies:'兴趣',
 }
 
 export const experiencesData = [
@@ -50,8 +54,16 @@ export const experiencesData = [
         date: "2021 Sep - 2025 Jul",
     },
     {
-        title: "th Head of Reading Club",
-        location: "NEAU",
+        title:"Data Science intern",
+        location:"Hainan YiQi Real Estate Company",
+        description:"Utilized ML techniques for modeling and model engineering to solve data science problems. Uncovered relationships between data and business, employing data for business modeling and quantitative reasoning, which led to a 28.5% increase in consultations. ",
+        icon:React.createElement(FaVuejs),
+        date: "2024 May - 2024 Sep",
+
+    },
+    {
+        title: "the Head of Organization Department ",
+        location: "the Reading Club of NEAU",
 
         description:
             "I have gained valuable skills such as Microsoft Office. My Responsibilities: planning activities,recording projects' process and coordinating activity execution.I can have Effective collaboration with team members and clear articulation of ideas and perspectives",
@@ -64,14 +76,22 @@ export const experiencesDataZn = [
     {
         "title": "统计学全日制本科",
         "location": "东北农业大学(211)",
-        "description": "在获取应用数学系统计学学士的过程中，我深入学习大数据、计算机编程和自我成长等领域。培养了计算思维、以用户为中心的设计和数据可视化方面的强大能力，为在科技驱动的环境中有效应用做好了准备。",
+        "description": "在获取应用数学系统计学学士的过程中，我深入学习大数据、计算机编程和自我成长等领域。培养了以数学逻辑为主和以用户体验为中心的思维，对成为一名工程师或项目与用户之间的桥梁充满了兴趣。",
         icon: React.createElement(LuGraduationCap),
         "date": "2021年9月 - 2025年7月"
     },
     {
+        "title":"数据科学实习生",
+        "location":"海南亿启房地产公司",
+        "description":"运用机器学习技术进行建模、模型工程解决数据科学中的问题。揭示数据与业务之间的关联，利用数据进行业务建模和定量推理，为公司增加了28.5%的咨询量。数据的获取、清洗、建模和探索，涉及技术工具主要为SQL、Excel和Python，并制作可视化图表和报告。",
+        icon: React.createElement(FaVuejs),
+        "date": "2024年5月 - 2024年9月"
+
+    },
+    {
         "title": "组织部部长",
         "location": "东农读书社",
-        "description": "主要运用的软件有PPT、Excel（熟练运用各种函数）、Word和数据透视表。岗位职责：规划活动、记录项目进展、协调活动执行，同时团队协作能力突出，能与团队成员高效协作并清晰流畅地表达自身观点和想法。     ",
+        "description": "主要运用的软件有PPT、Excel（熟练运用各种函数）、Word和数据透视表。岗位职责：规划活动、记录项目进展、协调活动执行，同时团队协作能力突出，能与团队成员高效协作并清晰流畅地表达自身观点和想法。",
         "icon": React.createElement(FaVuejs),
         "date": "2021年10月 - 2024年6月"
     }
@@ -94,11 +114,11 @@ export const projectsData = [
         detailRoute: '/projects/cutekitty',
     },
     {
-        title: "Paper Evaluation System",
-        title_zh: "论文质量评价系统",
+        title: "Automatic Evaluation",
+        title_zh: "竞赛论文自动化评阅",
         description:
-            "Use LDA for competition-related topics, assess key term relevance. Calculate summary coverage with bag-of-words model. Evaluate text fluency, chart standardization, and logical analysis with keyword co-occurrence and reasoning.",
-        desc_zh: "我作为队长兼编程手，负责用Python和R语言开发论文质量评价系统，该大语言模型通过综合使用数据挖掘、自然语言处理、文本分析、机器学习，从五个维度为论文评分，最后获得全国三等奖。成果：该模型共计为810篇论文批量式打分，并且实际拟合效果的匹配度高达91.3%，效率提高近300%。具体步骤：遍历pdf，用正则找（正文和摘要）、预处理、定义评价函数、设置异常时的条件函数和评分梯度。再详细些：应用 LDA 主题建模来识别与竞争相关的主题，确定关键词与主题的相关性。创建词袋模型来计算所需摘要词汇的覆盖率，衡量摘要与内容之间的相关性。利用关键词共现分析和逻辑推理评估文本流畅性、图表标准化、论证逻辑分析。",
+            "As the team leader and coder, I developed this language model using Python, utilizing data mining, NLP, text analysis, and ML, ultimately earning a national third prize. The model scored 810 papers in batches, achieving a match rate of 91.3% with actual results and a nearly 300% increase in efficiency",
+        desc_zh: "我作为队长兼编程手，负责用Python和R语言开发论文质量评价系统，该大语言模型通过综合使用数据挖掘、自然语言处理、文本分析、机器学习，从五个维度为论文评分，最后获得全国三等奖。成果：该模型共计为810篇论文批量式打分，并且实际拟合效果的匹配度高达91.3%，效率提高近300%。",
         tags: ["R", "Python", "Feature Engineering", "LDA" ,'K-means', "SPSS"],
         imageUrl: dataMining,
         projectUrl: '',
@@ -111,7 +131,7 @@ export const projectsData = [
         title_zh: '剧本杀记录APP(研发中）',
         description:
             "Let's look forward to my app going live soon.",
-        desc_zh: "目标功能：定义核心功能，例如记录游戏名称、心情、游戏时间、几人本及参与者、关键线索、复盘总结等。",
+        desc_zh: "目标功能：定义核心功能，例如记录游戏名称、心情、游戏时间、几人本及参与者、关键线索、复盘总结等。应该过年前完成，尽情期待。",
         tags: ["Kotlin", "Figma", 'Room', "RecyclerView", "UI"],
         imageUrl: scriptKilling,
         projectUrl: '',
@@ -120,10 +140,10 @@ export const projectsData = [
     }
     ,
     {
-        title: "Femicide Visualization",
+        title: "Femicide Visual",
         title_zh: 'Femicide 可视化',
-        description: "Data Cleaning and Preprocessing: Applied Numpy and Pandas for thorough data cleaning and preprocessing, ensuring accuracy and consistency, including handling missing values, outliers, and data format conversions. Data Visualization: Utilized libraries like Matplotlib, Seaborn, and Plotly to visually display key trends and characteristics in the Femicide data.",
-        desc_zh: "• 数据清洗和预处理：运用Numpy、Pandas对原始数据进行全面的清洗和预处理，确保数据的准确性和一致性，包括处理缺失值、异常值以及数据格式转换。• 数据可视化：使用例如Matplotlib、Seaborn、Polly等库，直观地展示Femicide数据中的关键趋势和特点。通过这些可视化，用户可以深入了解数据背后的故事。",
+        description: "Applied Numpy and Pandas for thorough data cleaning and preprocessing, ensuring accuracy and consistency, including handling missing values, outliers, and data format conversions. Utilized libraries like Matplotlib and Seaborn to visually display key trends and characteristics.",
+        desc_zh: "数据清洗和预处理：运用Numpy、Pandas对原始数据进行全面的清洗和预处理，确保数据的准确性和一致性，包括处理缺失值、异常值以及数据格式转换。数据可视化：使用例如Matplotlib、Seaborn等库，直观地展示其关键趋势和特点。",
         tags: ["Pyhon", "Numpy", "Pandas", "Flourish", 'PPT', 'Excel'],
         imageUrl: femicide,
         projectUrl:'',
