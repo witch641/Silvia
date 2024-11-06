@@ -116,9 +116,8 @@ export const projectsData = [
     {
         title: "Automated Rev",
         title_zh: "论文自动化评阅",
-        description:
-            "As the team leader and coder, I developed automated review model using Python, utilizing data mining, NLP and ML. this automatic scripts scored 810 papers in batches, ultimately earning a national third prize.",
-        des_zh:"我作为队长兼编程手，负责用Python开发论文自动化评阅脚本，该模型通过综合使用数据挖掘、自然语言处理、文本分析、机器学习，从五个维度为论文评分，该模型共计为810篇论文批量式打分，最后获得全国三等奖。",
+        description:"As the team leader and coder, I developed automated review model using Python, utilizing data mining, NLP and ML. this automatic scripts scored 810 papers in batches, ultimately earning a national third prize.",
+        desc_zh:"我作为队长兼编程手，负责用Python开发论文自动化评阅脚本，该模型通过综合使用数据挖掘、自然语言处理、文本分析、机器学习，从五个维度为论文评分，该模型共计为810篇论文批量式打分，最后获得全国三等奖。",
         tags: ["R", "Python", "Feature Engineering", "LDA" ,'K-means', "SPSS"],
         imageUrl: dataMining,
         projectUrl: '',
