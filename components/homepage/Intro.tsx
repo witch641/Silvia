@@ -39,8 +39,8 @@ export default function Intro() {
             <Image
               src="/profile.png"
               alt="developer-image"
-              width="250"
-              height="250"
+              width="275"
+              height="275"
               quality="95"
               priority={true}
               className="h-28 w-28 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
@@ -62,7 +62,7 @@ export default function Intro() {
               stiffness: 125,
             }}
           >
-            👋
+            🍟
           </motion.span>
         </div>
       </div>
@@ -97,8 +97,8 @@ export default function Intro() {
               <TypeAnimation
                 sequence={[
                   "Project Assistant",
-                  1000,
-                  "Digital Modality Analyst",
+                  1200,
+                  "IT Technologist",
                   1200,
                 ]}
                 wrapper="span"
@@ -109,7 +109,7 @@ export default function Intro() {
           </div>
         </motion.div>
         <p>{t("short_intro")}</p>
-        {activeLocale === "en" && (
+        {activeLocale === "zh" && (
           <p>
             My focus is{" "}
             <span className="italic font-bold">Devops</span>.
