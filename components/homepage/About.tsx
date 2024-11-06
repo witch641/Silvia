@@ -23,7 +23,7 @@ export default function About() {
       id="about"
     >
       <SectionHeading>{sectionLan("about")}</SectionHeading>
-      {activeLocale == "en" ? (
+      {activeLocale == "zh" ? (
         <p>{t("desc")}</p>
       ) : (
         <>
@@ -66,12 +66,12 @@ learning and applying innovative front-end solutions.
 
           <p className="mb-3">
           I'm keen on listening to podcasts and stand-by comedy. This year, I've completed over 40 published books and hope to connect with reading fellows.
-            <span className="font-medium italic"> </span>,
+            <span className="font-medium italic"> </span>
             {" "}
             <span className="font-medium italic">
             
             </span>
-            .{" "}
+            {" "}
           </p>
         </>
       )}

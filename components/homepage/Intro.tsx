@@ -5,7 +5,6 @@ import { motion } from "framer-motion"
 import { BsArrowRight, BsLinkedin } from "react-icons/bs"
 import { HiDownload } from "react-icons/hi"
 import { FaGithubSquare } from "react-icons/fa"
-import Link from "next/link"
 import { Source_Code_Pro } from "next/font/google"
 import { useLocale } from "next-intl"
 import { useSectionInView } from "@/lib/hooks"
@@ -39,8 +38,8 @@ export default function Intro() {
             <Image
               src="/profile.png"
               alt="developer-image"
-              width="275"
-              height="275"
+              width="250"
+              height="250"
               quality="95"
               priority={true}
               className="h-28 w-28 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
@@ -62,7 +61,7 @@ export default function Intro() {
               stiffness: 125,
             }}
           >
-            🍟
+            👋
           </motion.span>
         </div>
       </div>
