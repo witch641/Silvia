@@ -85,7 +85,7 @@ export default function Intro() {
 
           <div className="text-center">
             <span
-              className={`${sourceCodePro.className} text-sm tracking-wider`}
+              className={`${sourceCodePro.className} text-sm tracking-wider`}style={{fontFamily:'comic sans ms'}}
             >
               I&apos;m a{" "}
             </span>
