@@ -41,18 +41,16 @@ export default function About() {
             </span>
             . I'm majoring in data science, with a solid foundation in data engineering and IT technology. 
             As an avid gamer, I particularly enjoy cooperative and detective games like Werewolf, Mario, and script killing.
-            My passion for gaming extends beyond entertainment, as I focus on analyzing game mechanics and user experience.{" "}
+            My passion for gaming extends beyond entertainment, as I focus on analyzing game mechanics and user experience👩‍💻.{" "}
             <span className="font-medium italic"></span>
           </p>
 
           <p className="mb-3">
           Following Angela Yu's Frontend Development course and completing several projects, I've deepened my understanding and passion for front-end technologies. 
-          I'm eager to continue applying innovative front-end solutions and explore other exciting IT technologies.{" "}
+          I'm eager to continue applying innovative front-end solutions and explore other exciting IT technologies👩‍🚒.{" "}
             <span className="italic underline">
              
             </span>{" "}
-             I've deepened my understanding and passion for front-end technologies. Eager to continue 
-learning and applying innovative front-end solutions.
             <span className="font-medium italic">
             {" "}  
             </span>{" "}
@@ -65,8 +63,8 @@ learning and applying innovative front-end solutions.
           </p>
 
           <p className="mb-3">
-          I'm keen on listening to podcasts and stand-by comedy. This year, I've completed over 40 published books and hope to connect with reading fellows.
-            <span className="font-medium italic"> </span>
+          I'm keen on listening to podcasts and stand-by comedy. This year, I've completed over 40 published books and hope to connect with reading fellows🔥.
+            <span className="font-medium italic"> </span>r
             {" "}
             <span className="font-medium italic">
             

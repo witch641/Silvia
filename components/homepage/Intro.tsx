@@ -70,7 +70,7 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className={`${sourceCodePro.className} text-sm tracking-wider `}>
+        <span className={`${sourceCodePro.className} text-sm tracking-wider `}style={{fontFamily:'comic sans ms'}}>
           {t("hello_im")}
         </span>
         <motion.div
@@ -79,7 +79,7 @@ export default function Intro() {
           transition={{ duration: 0.5 }}
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
         >
-          <h1 className="text-center text-4xl  tracking-tight  sm:text-5xl"  style={{fontFamily: 'STXingkai'}}>
+          <h1 className="text-center text-4xl  tracking-tight  sm:text-5xl"  style={{fontFamily: 'STKaiti'}}>
             {t("name")}
           </h1>
 
