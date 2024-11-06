@@ -38,8 +38,8 @@ export default function Intro() {
             <Image
               src="/profile.png"
               alt="developer-image"
-              width="250"
-              height="250"
+              width="275"
+              height="275"
               quality="95"
               priority={true}
               className="h-28 w-28 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
@@ -61,7 +61,7 @@ export default function Intro() {
               stiffness: 125,
             }}
           >
-            👋
+            🍟
           </motion.span>
         </div>
       </div>
@@ -79,7 +79,7 @@ export default function Intro() {
           transition={{ duration: 0.5 }}
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
         >
-          <h1 className="text-center text-4xl  tracking-tight  sm:text-5xl"  style={{ fontFamily: 'Dancing Script'}}>
+          <h1 className="text-center text-4xl  tracking-tight  sm:text-5xl"  style={{fontFamily: 'STXingkai'}}>
             {t("name")}
           </h1>
 
