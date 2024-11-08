@@ -15,7 +15,7 @@ export default function Projects() {
     <section ref={ref} id="projects" className="scroll-mt-28 mb-28">
       <SectionHeading>
         {" "}
-        {activeLocale === "zh" ? headerLanguageMap["Projects"] : "My Projects"}
+        {activeLocale === "zh" ? headerLanguageMap["Projects"] : "Projects"}
       </SectionHeading>
       <div>
         {projectsData.map((project, index) => (
