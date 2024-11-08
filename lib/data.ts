@@ -165,7 +165,7 @@ export const skillsData = [
     "Linux/Unix","NLP",
     "Fluent in English",
     "Data Visualization",
-    "data Mining",
+    "Data Mining",
     "Microsoft Office",
     "Python",
     "R","SPSS","jQuery",
