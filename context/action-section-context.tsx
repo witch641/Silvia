@@ -1,58 +1,31 @@
 "use client"
 
-import React, {
-  useState,
-  createContext,
-  SetStateAction,
-  Dispatch,
-  useContext,
-} from "react"
+import React, { createContext, useContext, useState, ReactNode } from "react";
 import { links } from "@/lib/data"
 
 export type SectionName = (typeof links)[number]["name"]
-type ActionSectionContextProviderProps = {
-  children: React.ReactNode
+
+interface ActiveSectionContextProps {
+  activeSection: string;
+  setActiveSection: (section: string) => void;
 }
 
-type ActionSectionContextType = {
-  activeSection: SectionName
-  setActiveSection: Dispatch<
-    SetStateAction<"Home" | "About" | "Projects" | "Skills" | "Experience" | "Hobbies">
-  >
-  timeOfLastClick: number
-  setTimeOfLastClick: React.Dispatch<React.SetStateAction<number>>
-}
+const ActiveSectionContext = createContext<ActiveSectionContextProps | undefined>(undefined);
 
-const ActionSectionContext = createContext<ActionSectionContextType | null>(
-  null
-)
+export const useActiveSectionContext = () => {
+  const context = useContext(ActiveSectionContext);
+  if (!context) {
+    throw new Error("useActiveSectionContext must be used within an ActiveSectionProvider");
+  }
+  return context;
+};
 
-export function ActionSectionContextProvider({
-  children,
-}: ActionSectionContextProviderProps) {
-  const [activeSection, setActiveSection] = useState<SectionName>("Home")
-  const [timeOfLastClick, setTimeOfLastClick] = useState(0) // we need to keep track of this to disable the observer temporarily when user clicks on a link
+export const ActiveSectionProvider = ({ children }: { children: ReactNode }) => {
+  const [activeSection, setActiveSection] = useState<string>("Hobbies"); // 设置初始值为 "Hobbies"
 
   return (
-    <ActionSectionContext.Provider
-      value={{
-        activeSection,
-        setActiveSection,
-        timeOfLastClick,
-        setTimeOfLastClick,
-      }}
-    >
+    <ActiveSectionContext.Provider value={{ activeSection, setActiveSection }}>
       {children}
-    </ActionSectionContext.Provider>
-  )
-}
-
-export function useActiveSectionContext() {
-  const context = useContext(ActionSectionContext)
-  if (!context) {
-    throw new Error(
-      "useActiveSectionContext must be used within a ActionSectionContextProvider"
-    )
-  }
-  return context
-}
+    </ActiveSectionContext.Provider>
+  );
+};
