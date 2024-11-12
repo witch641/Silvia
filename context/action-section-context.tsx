@@ -2,6 +2,7 @@
 
 import React, { createContext, useContext, useState, ReactNode } from "react";
 import { links } from "@/lib/data"
+// import { ActiveSectionProvider } from "@/context/action-section-context"
 
 export type SectionName = (typeof links)[number]["name"]
 
