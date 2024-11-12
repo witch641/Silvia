@@ -1,4 +1,3 @@
-
 import React from "react";
 import Hobbies from "./Hobbies";
 // ...existing code...
@@ -7,9 +6,9 @@ const Homepage = () => {
   // ...existing code...
   return (
     <div>
-      // ...existing code...
+      {/* 这是一个注释 */}
       <Hobbies />
-      // ...existing code...
+      {/* 其他组件 */}
     </div>
   );
 };
