@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { useActiveSectionContext } from "@/context/action-section-context"; // Ensure this path is correct
+import { useActiveSectionContext } from "@/context/action-section-context"; // 确保路径正确
 import { motion } from "framer-motion";
 import SectionHeading from "./SectionHeading";
 
@@ -35,8 +35,8 @@ const hobbiesData = [
 const Hobbies = () => {
   const { activeSection } = useActiveSectionContext();
 
-  // Only render if `activeSection` is "Hobbies"
-  if (activeSection !== "Hobbies") {
+  // 确保 activeSection 存在并且是 "Hobbies"
+  if (!activeSection || activeSection !== "Hobbies") {
     return null;
   }
 
