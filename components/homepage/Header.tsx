@@ -9,9 +9,12 @@ import { useActiveSectionContext } from "@/context/action-section-context"
 import { useLocale } from "next-intl"
 
 function Header() {
-  const { activeSection, setActiveSection, setTimeOfLastClick } =
-    useActiveSectionContext()
+  const { activeSection, setActiveSection } = useActiveSectionContext()
   const activeLocale = useLocale()
+  const setTimeOfLastClick = (time: number) => {
+    console.log("Time of last click:", time)
+  }
+
   return (
     <header className="z-[999] relative">
 
