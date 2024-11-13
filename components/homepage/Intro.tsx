@@ -18,7 +18,7 @@ const sourceCodePro = Source_Code_Pro({ subsets: ["latin"], weight: "400" })
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.2)
   const activeLocale = useLocale()
-  const { setActiveSection } = useActiveSectionContext()
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext()
   const t = useTranslations("IntroSection")
   const [playHover] = useSound("/bubble.wav", { volume: 0.5 })
 
